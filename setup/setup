@@ -1,0 +1,25 @@
+#!/usr/bin/env fish
+
+# Installing fisher
+echo
+echo "--- Installing fisher"
+echo
+curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher && fisher update jorgebucaran/fisher
+
+# Copying fish_plugins_BACKUP over fish_plugins
+test -f ~/.config/fish/fish_plugins_BACKUP \
+  && echo \
+  && echo "--- If exists, copying fish_plugins_BACKUP over fish_plugins" \
+  && echo \
+  && cp -Rf ~/.config/fish/fish_plugins_BACKUP ~/.config/fish/fish_plugins \
+
+# Installing/updating plugins
+echo
+echo "--- Installing fisher plugins"
+echo
+fisher update
+
+# Copying hooks
+  cp -Rf ~/.config/fish/setup/pre-commit ~/.config/fish/.git/hooks/pre-commit \
+  && echo "--- pre-commit copied to ~/.config/fish/.git/hooks" \
+  && echo

@@ -1,0 +1,14 @@
+# Ignore
+fish_variables
+completions/*
+
+!conf.d/
+conf.d/*
+!conf.d/xdg.fish
+
+!functions/
+functions/*
+# Do not ignore
+!functions/fish_right_prompt.fish
+
+!.gitignore
