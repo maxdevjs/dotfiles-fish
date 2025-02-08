@@ -146,7 +146,7 @@ set -gx XDG_CONFIG_HOME "$HOME/.config"
 set GOPATH "$HOME/go"
 set GOBIN $GOPATH/bin
 set GOMODCACHE $GOPATH/pkg/mod
-set -x PATH $GOPATH $GOBIN $GOMODCACHE $HOME/.local/bin $HOME/.local/bin/scripts $PATH
+set -x PATH $GOPATH $GOBIN $GOMODCACHE $HOME/.local/bin $HOME/.local/scripts $PATH
 
 # https://github.com/jarun/nnn/tree/master/plugins#configuration
 #"NNN_FIFO=/tmp/nnn.fifo NNN_PLUG='p:preview-tui' nnn "
