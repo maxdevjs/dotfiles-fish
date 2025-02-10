@@ -36,7 +36,8 @@ abbr -a yd 'youtube-dl ""'
 
 if type -q n exa
     #alias la="exa -la"
-    alias la="exa -l -g --icons"
+    alias la="li -a"
+    alias li="exa -l -g --icons"
     alias lg="exa --git -l"
     alias lt="exa --tree -D -L 3"
 end
