@@ -33,7 +33,6 @@ abbr -a flutter-run-emulator 'xhost local:$USER && docker run --rm -ti -e UID=(i
 # https://github.com/fish-shell/fish-shell/issues/3907
 abbr -a yd 'youtube-dl ""'
 
-
 if type -q n exa
     #alias la="exa -la"
     alias la="li -a"
@@ -51,10 +50,10 @@ set fish_cursor_insert line blink
 set fish_cursor_replace_one underscore blink
 set fish_cursor_visual block
 
-
 # Miscellaneous
 alias ks="$XDG_CONFIG_HOME/kitty/sessions/kitty-startup"
 alias rmfi='complete -C | fzf | xargs | cut -d " " -f 1 | xargs man' # read manual for item
+alias tcs="xdg-open https://tmuxcheatsheet.com/ &> /dev/null 2>&1"
 
 ### Dev
 
@@ -179,11 +178,6 @@ end
 # source $XDG_CONFIG_HOME/fish/themes/fish_tokyonight_storm.fish
 
 # TODO: port https://github.com/mvllow/dots/blob/main/guides/update-kitty-config-from-neovim.md
-
-
-
-
-
 
 #set DISTRO (lsb_release -a) > /dev/null 2>&1;
 
